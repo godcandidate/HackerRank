@@ -1,0 +1,23 @@
+if __name__ == '__main__':
+  records = []
+  new_record = []
+  scores = set()
+  
+  for _ in range(int(input())):
+      name = input()
+      score = float(input())
+      records.append([name, score])
+      scores.add(score)
+  
+  second_lowest = sorted(scores)[1]
+  
+  for name, score in records:
+      if score == second_lowest:
+          new_record.append(name)
+          
+  for name in sorted(new_record):
+      print(name)
+
+    
+
+
