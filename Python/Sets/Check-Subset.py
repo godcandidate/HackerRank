@@ -5,8 +5,9 @@ N = int(input())
 
 for _ in range(N):
     a = int(input())
-    A = set(input().strip())
+    A = set(map(int,input().split()))
     b = int(input())
-    B = set(input().strip())
+    B = set(map(int,input().split()))
     
     print(A.issubset(B))
+    
